@@ -1,0 +1,281 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  font-family: 'Work Sans', sans-serif;
+}
+.header{
+  background: rgba(255, 144, 14, 0.1);
+}
+nav{
+  display: flex;
+  padding-top: 55px;
+  justify-content: space-between;
+}
+.company-name{
+  padding-left: 100px;
+}
+nav ul{
+  list-style: none;
+  display: flex;
+  padding-right: 100px;
+}
+nav li{
+  padding-right: 40px;
+  color: #424242;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+/* 
+banner styles here
+*/
+.banner{
+text-align: center;
+}
+.banner-description{
+  margin-top: 20px;
+  padding-left: 190px;
+  padding-right: 190px;
+}
+.banner-title{
+  margin-top: 110px;
+  font-weight: 700;
+  font-size: 64px;
+}
+.banner-description{
+  font-weight: 400;
+  font-size: 16px;
+  color: #727272;
+}
+.btn{
+  margin-top: 30px;
+ padding: 20px 25px;
+ border: 0;
+ border-radius: 8px;
+ color: #FFFFFF;
+ background: #FF900E;
+}
+.banner-img{
+ margin-top: 50px;
+ margin-bottom: 40px;
+ width: 1050px;
+}
+
+/* futures style */
+.our-futures{
+  display: flex;
+  gap: 60px;
+  margin-top: 80px;
+  padding-left: 170px;
+}
+.futures-img{
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.img{
+  width: 200px;
+  height: 200px;
+}
+.futures-title{
+  margin-top: 70px;
+  padding-right: 100px;
+}
+.futures-tite-plate{
+  font-weight: 500;
+  font-size: 45px;
+}
+.another-font{
+ color: #727272;
+ font-weight: 200;
+ font-family: 'Work Sans', sans-serif;
+}
+.strong-font{
+  color: #131313;
+}
+.color-font{
+ color: #FF900E;
+}
+.futures-description{
+  margin-top: 30px;
+  color: #727272;;
+}
+
+/* specialty styles */
+
+.specialty{
+  display: flex;
+  gap: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-top: 200px;
+}
+.specialty-title{
+  font-weight: 700;
+  font-size: 45px;
+  border-left: 4px solid #FF900E;
+  margin-bottom: 20px;
+}
+.specialty-description{
+ margin-bottom: 20px;
+ font-weight: 400;
+ font-size: 16px;
+ color: #727272;
+}
+.sub-specialty{
+  margin-bottom: 10px;
+  box-shadow: #131313;
+}
+.sub-specialty-title{
+font-weight: 600;
+font-size: 20px;
+color: #131313;
+margin-bottom: 7px;
+}
+.sub-specialty-description{
+ color: #727272;;
+ margin-bottom: 20px;
+}
+.specialty-image img{
+  width: 500px;
+  height: 659px;
+}
+.upar-word-btn{
+  font-size: 25px;
+  padding: 30px 40px;
+  margin-bottom: 30px;
+}
+
+/* fact-styles here */
+
+.fact{
+  padding-left: 100px;
+  margin-top: 100px;
+}
+.fact-title{
+  font-weight: 700;
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+.fact-description{
+  font-weight: 400;
+  font-size: 16px;
+  color: #727272;
+}
+
+.boxes{
+  display: flex;
+  gap: 50px;
+  text-align: center;
+  padding-left: 100px;
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+.box{
+  border: 1px solid #FF900E;
+  border-radius: 8px;
+}
+.box-img{
+  padding-top: 40px;
+}
+.box-degit{
+  font-weight: 600;
+  font-size: 45px;
+}
+.box-title{
+  font-weight: 600;
+  font-size: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 55px;
+}
+
+/* sponspore style here */
+
+.sponspore{
+  text-align: center;
+}
+.sponspore-title{
+  font-weight: 700;
+  font-size: 45px;
+  color: #131313;
+  margin-bottom: 24px;
+}
+.sponspore-description{
+  font-weight: 400;
+  margin-bottom: 50px;
+  font-size: 16px;
+  color: #727272;
+}
+.sponspore-images{
+  display: flex;
+  gap: 100px;
+  padding-left: 190px;
+}
+.sponspore-image{
+  align-items: center;
+}
+.sponspore-img{
+ height: 30px;
+ -webkit-filter: grayscale(100%);
+ filter: grayscale(100%);
+ margin-bottom: 120px;
+}
+
+/* footer styles here */
+.footer{
+  background: #FFF4E7;
+  border-radius: 8px;
+  margin: 0 120px;
+  margin-bottom: 100px;
+}
+.footer-title{
+  padding: 35px 100px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 576px) {
+  body{
+    text-align: center;
+  }
+  .our-futures, .specialty, .boxes, .sponspore-images{
+    flex-direction: column;
+  }
+  .company-name{
+    padding-left: 10px;
+  }
+  nav{
+    margin-left: 10px;
+    flex-direction: column;
+  }
+  nav ul{
+    height: 230px;
+    margin-top: 70px;
+    flex-direction: column;
+  }
+  /* .banner-title, .banner-description{
+    text-align: left;
+    width: 100%;
+  } */
+  .specialty-image img{
+    width: 100%;
+  }
+  .fact{
+    margin: 0;
+    padding: 0 4px;
+    width: 100%;
+  }
+  .footer{
+    margin: 0;
+  }
+
+  .futures-img{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .sponspore{
+    text-align: center;
+  }
+  .banner-img{
+    display: none;
+  }
+}
